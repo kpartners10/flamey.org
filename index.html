@@ -7,6 +7,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto&display=swap" rel="stylesheet">
   <style>
+    @keyframes flameGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px #ff4500);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #ff6600);
+  }
+}
+
+img[alt="$FLAMEY Logo"] {
+  animation: flameGlow 1.8s infinite ease-in-out;
+}
     body {
       margin: 0;
       background-color: #111;
